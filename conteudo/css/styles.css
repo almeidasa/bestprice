@@ -22,7 +22,7 @@ color: #17baef;
     padding-top: 10px;
     display: flex;
     flex-direction: column;
-    height: calc(100vh - 35px);
+    height: calc(100vh - 65px);
 }
 .clear.botoes {
     align-self: flex-end;
@@ -44,7 +44,6 @@ input#btnLimpar {
     margin-right: 5px;
 }
 section.calculos {
-    height: calc(100vh - 75px);
     margin: 10px 10px 0px 10px;
     overflow: auto;
     background: #f3f8fb 0% 0% no-repeat padding-box;
