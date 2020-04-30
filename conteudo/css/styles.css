@@ -45,7 +45,7 @@ input#btnLimpar {
 }
 section.calculos {
     height: calc(100vh - 69px);
-    margin: 0px 10px 0px 10px;
+    margin: 10px 10px 0px 10px;
     overflow: auto;
     background: #f3f8fb 0% 0% no-repeat padding-box;
     border: 1px solid #a5b3c5;
