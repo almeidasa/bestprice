@@ -22,23 +22,37 @@
                 <h3 class="intro">Calcule agora qual bebida sai mais em conta, sem perder tempo!</h3>
             </div>
 
+            <form class="form" onsubmit="return false">
+                <div class="form-group div-quantidade">
+                    <label for="usr">Quantidade:</label>
+                    <select id="tipo" class="form-control form-control-sm">
+                        <option>Caixa</option>
+                        <option>Unidade</option>
+                    </select>
+                </div>
+                <div class="form-group div-nome">
+                    <label for="usr">Nome:</label>
+                    <input required type="text" class="form-control" id="nome" placeholder="Heineken">
+                </div>
+                <div class="form-group div-quantidade">
+                    <label for="usr">Quantidade:</label>
+                    <input required type="number" class="form-control" id="quantidade" placeholder="1">
+                </div>
+                <div class="form-row div-preco">
+                    <label for="c2">Preço:</label>
+                    <div class="input-group"> 
+                        <span class="input-group-addon">R$</span>
+                        <input required id="preco" class="form-control currency" type="number" placeholder="R$ 2,45" min="0" step="0.01" data-number-to-fixed="2" data-number-stepfactor="100" />
+                    </div>
+                </div>
+                <div class="form-group div-litro">
+                    <label for="usr">Litragem (ml):</label>
+                    <input required="true" type="number" id="litro" class="form-control" id="quantidade" placeholder="365 ml">
+                </div>
+                <button id="botao-adicionar" type="submit" class="btn btn-primary">Adicionar</button>
+            </form>
             <section class="calculos">
-                <center>
-                    <h1 style="color: red;">Em breve!!</h1>
-                    <h1 style="color: red;">Em breve!!</h1>
-                    <h1 style="color: red;">Em breve!!</h1>
-                    <h1 style="color: red;">Em breve!!</h1>
-                    <h1 style="color: red;">Em breve!!</h1>
-                    <h1 style="color: red;">Em breve!!</h1>
-                    <h1 style="color: red;">Em breve!!</h1>
-                    <h1 style="color: red;">Em breve!!</h1>
-                    <h1 style="color: red;">Em breve!!</h1>
-                    <h1 style="color: red;">Em breve!!</h1>
-                    <h1 style="color: red;">Em breve!!</h1>
-                    <h1 style="color: red;">Em breve!!</h1>
-                    <h1 style="color: red;">Em breve!!</h1>
-                    <h1 style="color: red;">Em breve!!</h1>
-                </center>
+
             </section>
             <div class="clear botoes">
                 <input type="button" id="btnLimpar" value="Limpar" class="btn btn-danger">
