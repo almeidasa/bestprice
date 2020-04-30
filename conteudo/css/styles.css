@@ -19,7 +19,7 @@ color: #17baef;
 }
 .principal {
     color: #fff;
-    padding-top: 10px;
+    padding: 10px;
     display: flex;
     flex-direction: column;
     height: calc(100vh - 65px);
@@ -57,7 +57,8 @@ button#botao-adicionar {
     height: 34px;
     margin-top: 33px;
 }
-section.calculos {
+.quadro-itens {
+    min-height: 200px;
     height: 100vh;
     margin: 0px 10px 0px 10px;
     overflow: auto;
