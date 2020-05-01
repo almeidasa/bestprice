@@ -138,7 +138,10 @@ span.excluirCard {
     position: relative;
     cursor: pointer;
 }
-
+li.cardFiltro.melhor-opcao {
+    box-shadow: 0 4px 5px 0 rgba(15, 213, 39, 0.68), 0 1px 10px 0 rgba(15, 213, 39, 0.68), 0 2px 4px -1px rgba(15, 213, 39, 0.68);
+    border: solid 2px rgba(15, 213, 39, 0.68);
+}
 /* ======= RODAPÉ ======= */
 .footer {
     padding: 3px 0;
