@@ -33,10 +33,12 @@ jQuery(document).ready(function($) {
 
         if(!isNaN(menorValor)) {
             jQuery.each($(listaDeCards), function(index, el){
-                var valor = $(el).find("input#item-valores").data("preco-por-litro");
-                
-                if(valor == menorValor){
-                $(el).addClass("melhor-opcao");
+                var valores = $(el).find("input#item-valores")
+                var valor = $(valores).data("preco-por-litro");
+
+                if(valor == menorValor) {
+                    $(el).addClass("melhor-opcao");
+                    alert("A melhor opção é a " + $(valores).data("nome") + "\nPreço por 100 ml R$ " + (valor * 100).toFixed(2));
                 }
             });
         }
@@ -70,7 +72,7 @@ jQuery(document).ready(function($) {
         var card = "<li class='cardFiltro'>";
         card += "<div class='cardFiltroItem'>";
         card += "<input id='item-valores' type='hidden' data-preco-por-litro='" + precoPorLitro + "' data-id='ITEM" + model.id + "' data-nome='" + model.nome + "' data-quantidade='" + model.quantidade + "' data-preco='" + model.preco + "' data-litragem='" + model.litragem + "'/>";        
-        card += "<div class='divNome'><i class='fa fa-user'></i><p>"+ model.nome +"</p></div>";
+        card += "<div class='divNome'><i class='fa fa-glass'></i><p>"+ model.nome +"</p></div>";
         card += "<span style='color: #2678C9;background: #E1F3FF' class='excluirCard' title='Remover bebida'></span>";
         card += "<p class='informacoes'>" + model.quantidade + obtenhaUnidade(model) + model.litragem + " ml</p>";
         card += "<p class='informacoes'>Preço R$ " + model.preco +"</p>";
